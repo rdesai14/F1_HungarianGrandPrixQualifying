@@ -150,39 +150,39 @@ def apply_performance_factors(predictions_df):
     base_time = 76  # in seconds
     
     team_factors = {
-        'Red Bull Racing': 0.998,    # -0.3s from base
-        'Ferrari': 0.999,          # -0.2s from base
-        'McLaren': 0.997,          # -0.15s from base
-        'Mercedes': 0.999,         # -0.15s from base
+        'Red Bull Racing': 0.996,    # -0.3s from base
+        'Ferrari': 0.998,          # -0.2s from base
+        'McLaren': 0.995,          # -0.15s from base
+        'Mercedes': 0.998,         # -0.15s from base
         'Aston Martin': 1.002,     # +0.1s from base
-        'RB': 1.005,              # +0.2s from base
-        'Williams': 1.002,         # +0.3s from base
+        'RB': 1.003,              # +0.2s from base
+        'Williams': 1.004,         # +0.3s from base
         'Haas F1 Team': 1.007,     # +0.4s from base
-        'Kick Sauber': 1.01,      # +0.4s from base (Audi development)
-        'Alpine': 1.005,           # +0.5s from base
+        'Kick Sauber': 1.010,      # +0.4s from base (Audi development)
+        'Alpine': 1.006,           # +0.5s from base
     }
     
     driver_factors = {
-        'Max Verstappen': 0.999,     # -0.2s (exceptional)
-        'Charles Leclerc': 0.999,    # -0.1s (very strong qualifier)
+        'Max Verstappen': 0.996,     # -0.2s (exceptional)
+        'Charles Leclerc': 0.997,    # -0.1s (very strong qualifier)
         'Carlos Sainz': 1.001,       # -0.1s (very consistent)
-        'Lando Norris': 0.998,       # -0.1s (McLaren leader)
-        'Oscar Piastri': 0.998,      # Base time (strong)
-        'Gabriel Bortoleto ': 1.002,       # Base time
-        'Lewis Hamilton': 1.000,     # Base time
-        'George Russell': 1.000,     # Base time
-        'Fernando Alonso': 1.001,    # Base time
+        'Lando Norris': 0.995,       # -0.1s (McLaren leader)
+        'Oscar Piastri': 0.995,      # Base time (strong)
+        'Gabriel Bortoleto': 1.005,       # Base time
+        'Lewis Hamilton': 1.001,     # Base time
+        'George Russell': 0.999,     # Base time
+        'Fernando Alonso': 1.002,    # Base time
         'Lance Stroll': 1.003,       # +0.1s
         'Alex Albon': 1.001,         # +0.1s
         'Isack Hadjar': 1.003,   # +0.1s
         'Yuki Tsunoda': 1.004,       # +0.2s
         'Liam Lawson': 1.002,    # +0.2s
-        'Oliver Bearman': 1.002,        # +0.3s
-        'Franco Colapinto': 1.004,    # +0.3s
-        'Nico Hulkenberg': 1.003,    # +0.3s
+        'Oliver Bearman': 1.003,        # +0.3s
+        'Franco Colapinto': 1.005,    # +0.3s
+        'Nico Hulkenberg': 1.002,    # +0.3s
         'Kimi Antonelli': 1.000,     # +0.4s
         'Pierre Gasly': 1.003,       # +0.4s
-        'Esteban Ocon': 1.003,       # +0.4s
+        'Esteban Ocon': 1.002,       # +0.4s
     }
     
     

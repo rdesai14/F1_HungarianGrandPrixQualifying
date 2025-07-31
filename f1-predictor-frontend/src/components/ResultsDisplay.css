@@ -1,0 +1,118 @@
+.results-container {
+  background: var(--f1-dark-gray);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-top: 2rem;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.results-container h3 {
+  color: var(--f1-red);
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.metrics {
+  display: flex;
+  justify-content: space-around;
+  background: var(--f1-black);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--f1-red);
+}
+
+.metrics p {
+  color: var(--f1-white);
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--f1-black);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.results-table th {
+  background: var(--f1-red);
+  color: var(--f1-white);
+  padding: 1rem 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.results-table td {
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid var(--f1-gray);
+  color: var(--f1-white);
+  text-align: center;
+}
+
+.results-table tbody tr:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.results-table tbody tr:hover {
+  background: rgba(225, 6, 0, 0.1);
+  cursor: pointer;
+}
+
+.results-table tbody tr:first-child td:first-child {
+  color: var(--f1-gold);
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.results-table tbody tr:nth-child(2) td:first-child {
+  color: var(--f1-silver);
+  font-weight: 700;
+}
+
+.results-table tbody tr:nth-child(3) td:first-child {
+  color: var(--f1-bronze);
+  font-weight: 700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .results-container {
+    padding: 1rem;
+  }
+
+  .metrics {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .results-table {
+    font-size: 0.8rem;
+  }
+
+  .results-table th,
+  .results-table td {
+    padding: 0.5rem 0.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .results-table th,
+  .results-table td {
+    padding: 0.4rem 0.1rem;
+    font-size: 0.7rem;
+  }
+
+  .results-container h3 {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,119 @@
+/* F1 Color Scheme */
+:root {
+  --f1-red: #e10600;
+  --f1-dark-red: #b91c1c;
+  --f1-black: #15151e;
+  --f1-dark-gray: #1a1a1a;
+  --f1-gray: #383838;
+  --f1-light-gray: #a1a1aa;
+  --f1-white: #ffffff;
+  --f1-gold: #ffd700;
+  --f1-silver: #c0c0c0;
+  --f1-bronze: #cd7f32;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, var(--f1-black) 0%, var(--f1-dark-gray) 100%);
+  color: var(--f1-white);
+  min-height: 100vh;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Error Message Styling */
+.error-message {
+  background: linear-gradient(135deg, var(--f1-red), var(--f1-dark-red));
+  border: 1px solid var(--f1-red);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(225, 6, 0, 0.2);
+}
+
+.error-message p {
+  font-weight: 600;
+  color: var(--f1-white);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+  
+  .main-content {
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 0.5rem 0;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--f1-dark-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--f1-red);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--f1-dark-red);
+}
